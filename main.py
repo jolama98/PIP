@@ -19,8 +19,19 @@ def check_age(age):
         print(f"{age} fuck you are old.")
 
 
-start_pip()
-name = get_name()
-print(name)
-age = get_age()
-check_age(age)
+def main():
+    start_pip()
+    name = get_name()
+    print(name)
+    age = get_age()
+    check_age(age)
+
+
+# for i in range(5, 11):
+#     print(i)
+main()
+
+message = ""
+while message != "quit":
+    message = input("Say something to Pip: ")
+    print(message)
