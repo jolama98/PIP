@@ -3,11 +3,16 @@ def start_pip():
 
 
 start_pip()
-
-
 name = input("Please enter your name: ")
+
+
+def greet_user(name):
+    print(f"Hello, {name}! I am PIP.")
+
+
+greet_user(name)
+
 age = int(input("Please enter your age: "))
-print(f"Hello, {name}! I am PIP.")
 
 if age < 18:
     print("You are a minor.")
