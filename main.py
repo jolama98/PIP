@@ -2,20 +2,25 @@ def start_pip():
     print("PIP is on line")
 
 
+def get_name():
+    name = input("Please enter your name: ")
+    return name
+
+
+def get_age():
+    age = int(input("Please enter your age: "))
+    return age
+
+
+def check_age(age):
+    if age < 18:
+        print("Come here kid, I got some candy.")
+    else:
+        print(f"{age} fuck you are old.")
+
+
 start_pip()
-name = input("Please enter your name: ")
-
-
-def greet_user(name):
-    print(f"Hello, {name}! I am PIP.")
-
-
-greet_user(name)
-
-age = int(input("Please enter your age: "))
-
-if age < 18:
-    print("You are a minor.")
-else:
-    print("You are an adult.")
-print(f"You are {age} years old.")
+name = get_name()
+print(name)
+age = get_age()
+check_age(age)
