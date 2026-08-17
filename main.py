@@ -19,19 +19,35 @@ def check_age(age):
         print(f"{age} fuck you are old.")
 
 
+def brain_loop():
+    message = ""
+    while message != "quit":
+        message = input("Say something to Pip: ")
+
+        if message == "quit":
+            break
+
+        print(message)
+
+
+def check_is_online(is_online):
+    if is_online:
+        print("Pip is awake.")
+    else:
+        print("Pip is sleeping.")
+
+
 def main():
+    is_online = True
+    check_is_online(is_online)
     start_pip()
     name = get_name()
     print(name)
     age = get_age()
     check_age(age)
+    brain_loop()
 
 
 # for i in range(5, 11):
 #     print(i)
 main()
-
-message = ""
-while message != "quit":
-    message = input("Say something to Pip: ")
-    print(message)
